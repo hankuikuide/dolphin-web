@@ -8,7 +8,11 @@ Vue.use(VueRouter)
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    // 是否数据缓存
+    meta: {
+      keepAlive: true
+    }
   },
   {
     path: '/about',
